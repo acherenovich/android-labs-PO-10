@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar для кнопки "Назад" -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Тюльпан"
+        android:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"/>
+
+    <ImageView
+        android:id="@+id/tulipImage"
+        android:layout_width="393dp"
+        android:layout_height="296dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tulipName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tulipColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp" />
+
+    <!-- Добавляем новый TextView для отображения высоты -->
+    <TextView
+        android:id="@+id/tulipHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

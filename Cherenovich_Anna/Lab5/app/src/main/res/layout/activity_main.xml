@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выполнила Черенович Анна"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/imageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Выбрать изображение"
+            android:background="@drawable/rounded_button"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/audioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Выбрать аудио"
+            android:background="@drawable/rounded_button"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/videoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Выбрать видео"
+            android:background="@drawable/rounded_button"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
