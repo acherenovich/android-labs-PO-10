@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Кнопка для выбора файла -->
+    <Button
+        android:id="@+id/btnChooseFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать файл"
+        android:layout_gravity="center" />
+
+    <!-- Контейнер для ImageView и VideoView -->
+    <FrameLayout
+        android:id="@+id/mediaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp">
+
+        <!-- ImageView для отображения изображений -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <!-- VideoView для воспроизведения видео -->
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- TextView для отображения информации о аудиофайле -->
+    <TextView
+        android:id="@+id/audioInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Название аудиофайла"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:layout_gravity="center" />
+
+    <!-- Нижняя панель с кнопками для управления -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:paddingTop="16dp"
+        android:gravity="center">
+
+        <!-- Кнопка Играть -->
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Играть"
+            android:visibility="gone"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Кнопка Пауза -->
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пауза"
+            android:visibility="gone"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Кнопка Закрыть -->
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Закрыть"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
