@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#483D8B">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дрыга В.C"
+        android:textSize="14sp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/info_button"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/imageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбрать изображение (нажимает Дрыга В.С)"
+            android:background="#DDA0DD" />
+
+        <Button
+            android:id="@+id/audioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбрать аудио (нажимает Дрыга В.С)"
+            android:layout_marginTop="20dp"
+            android:background="#DDA0DD" />
+
+        <Button
+            android:id="@+id/videoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбрать видео (нажимает Дрыга В.С)"
+            android:layout_marginTop="20dp"
+            android:background="#DDA0DD" />
+    </LinearLayout>
+
+</RelativeLayout>

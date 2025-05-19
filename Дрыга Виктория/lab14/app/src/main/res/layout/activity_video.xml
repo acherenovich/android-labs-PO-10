@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#483D8B"
+    >
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <!-- Кнопка "Отмотать на старт" -->
+        <ImageButton
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rewind_button"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="В начало"/>
+
+        <!-- Кнопка "5 секунд назад" -->
+        <ImageButton
+            android:id="@+id/rewindButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_f"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Назад на 5 секунд"/>
+
+        <!-- Кнопки Play/Pause на одном месте -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/playButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play_button"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Воспроизведение"/>
+
+            <ImageButton
+                android:id="@+id/pauseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pause_button"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Пауза"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- Кнопка "+10 секунд" -->
+        <ImageButton
+            android:id="@+id/forwardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_t"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Вперед на 10 секунд"/>
+
+        <!-- Кнопка "Отмотать вперед" -->
+        <ImageButton
+            android:id="@+id/endButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/forward_button"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="В конец"
+            android:layout_marginLeft="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
