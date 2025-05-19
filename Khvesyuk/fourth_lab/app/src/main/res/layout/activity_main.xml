@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/idEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите ID файла (Вводит Хвесюк Тимофей)"
+        android:inputType="text"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#009688"
+        android:layout_below="@id/idEdit"
+        android:layout_marginBottom="30dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/downloadBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="⬇"
+            android:textSize="22sp"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:elevation="8dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/openBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="📂"
+            android:textSize="22sp"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:elevation="8dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="🗑"
+            android:textSize="22sp"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:elevation="8dp"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>
