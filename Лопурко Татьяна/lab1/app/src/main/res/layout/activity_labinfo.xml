@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LabinfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Лопурко Т.Ю. ПО-10"
+                android:textSize="14sp"
+                android:layout_gravity="left"
+                android:paddingBottom="5dp"/>
+
+            <!-- Заголовок -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Функции приложения"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:paddingBottom="12dp"/>
+
+            <!-- Основные требования -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Основные требования:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Реализовать интерфейс приложения для отображения списка элементов. В качестве данных для списка использовать файл в формате json, загруженный с удаленного сервера. Загрузка выполняется в ходе работы по команде пользователя, например, «Загрузить данные»."
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• отображать список элементов внутри фрагмента\n• список занимает более одного экрана (прокрутка)\n• список можно пролистать\n• отдельный элемент списка с пользовательским стилем/дизайном\n• выполнять запрос на получение данных с удаленного сервера\n• выполнять преобразование json-структуры в коллекцию объектов\n• выделение отдельного элемента списка с отображение детальной информации на отдельном экране\n• отображать детальную информацию об элементе внутри отдельного фрагмента"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+            <!-- Бонусные функции -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Бонусы:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Возможность настраивать приложение (выбирать или вписывать путь к серверу, выбирать размер выводимой информации – число строк, вывод полей и т.п.)\n• Присутствие на экране кнопок управления страницами, строками, видом отображаемой информации)\n• Разработка и использование собственного адаптера\n• Включение изображений в список\n• Обработка исключений с выводом сообщений."
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

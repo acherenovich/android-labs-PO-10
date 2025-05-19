@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Поле для ввода URL сервера -->
+    <EditTextPreference
+        app:key="server_url"
+        app:title="Путь к серверу"
+        app:defaultValue="https://raw.githubusercontent.com/tatiana262/Android-lab1/main"
+        app:dialogTitle="Введите путь к серверу" />
+
+    <!-- Поле для выбора количества строк -->
+    <ListPreference
+        app:key="row_count"
+        app:title="Число строк"
+        app:defaultValue="all"
+        app:entries="@array/row_count_entries"
+        app:entryValues="@array/row_count_values" />
+
+    <!-- Чекбоксы для отображения полей -->
+    <MultiSelectListPreference
+        app:key="visible_fields"
+        app:title="Выводимые поля"
+        app:entries="@array/field_entries"
+        app:entryValues="@array/field_values"
+        app:defaultValue="@array/field_values"/>
+
+</PreferenceScreen>

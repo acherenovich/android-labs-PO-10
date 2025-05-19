@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LabinfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Лопурко Т.Ю. ПО-10"
+                android:textSize="14sp"
+                android:layout_gravity="left"
+                android:paddingBottom="5dp"/>
+
+            <!-- Заголовок -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Практическое задание"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:paddingBottom="12dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Разработать приложение MiniShop, состоящее из двух Activity (см. рисунки 3.3, 3.4 в источнике).\n\n2. В первом Activity создать список ListView с Header и Footer.\n\n3. В Footer разместить текстовое поле (TextView) для ввода количества активированных пользователем товаров, кнопку Show Checked Items для перехода в корзину товаров.\n\n4. Реализовать кастомизированный список ListView с помощью собственного адаптера, наследующего класс BaseAdapter.\n\n5. В каждом пункте списка отобразить следующую информацию о товаре: идентификационный номер, название, стоимость, чекбокс для возможности выбора товара пользователем. \n\n6. В текстовом поле (TextView) Footer списка динамически отображать общее текущее количество активированных товаров.\n\n7. При нажатии кнопки Show Checked Items реализовать переход во второе Activity с корзиной товаров.\n\n8. Корзину товаров реализовать в виде нового кастомизированного списка с выбранными товарами.\n\n9. Продемонстрировать работу приложения MiniShop на эмуляторе или реальном устройстве."
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
