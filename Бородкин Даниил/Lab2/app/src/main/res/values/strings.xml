@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="name_placeholder">Название</string>
+    <string name="price_placeholder">Цена</string>
+    <string name="id_pacehder">id</string>
+    <string name="show_items_placeholder">Показать отмеченные товары</string>
+    <string name="item_list_placeholder">Мой список товаров</string>
+</resources>

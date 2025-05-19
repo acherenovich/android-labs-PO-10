@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/black">
+
+    <!-- Заголовок калькулятора -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Бородкин Д.В. ПО-10"
+        android:textSize="26sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Жестовый Калькулятор"
+        android:textSize="26sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Экран калькулятора -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:padding="16dp"
+        android:text="0"
+        android:minHeight="80dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Подсказка -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рисуйте жесты для цифр и операций"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Область для ввода жестов -->
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gestureStrokeWidth="6"
+        android:gestureColor="@android:color/holo_blue_light"
+        android:uncertainGestureColor="@android:color/holo_red_light"
+        android:background="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Кнопки -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btn_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подсказка"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Данные о ЛР"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</LinearLayout>
