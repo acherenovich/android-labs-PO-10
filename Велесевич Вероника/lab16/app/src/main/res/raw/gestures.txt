@@ -1,0 +1,2 @@
+Swipe Left;0,100;100,100
+Swipe Right;100,100;0,100

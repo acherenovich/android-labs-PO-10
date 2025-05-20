@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_gray">#E0E0E0</color>  <!-- Серый цвет -->
+    <color name="white">#FFFFFF</color>        <!-- Белый цвет -->
+    <color name="header_footer_color">#FCFDFB</color> <!-- Оранжевый заголовок -->
+    <color name="purple_500">#8BC34A</color>
+</resources>

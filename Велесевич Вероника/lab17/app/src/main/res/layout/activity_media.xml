@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Horizontal layout for Select Video and Select Audio buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonSelectVideo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Video"/>
+
+        <Button
+            android:id="@+id/buttonSelectAudio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Audio"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonPlayAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Audio/Video"/>
+
+    <Button
+        android:id="@+id/buttonPauseAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pause Audio/Video"/>
+
+    <Button
+        android:id="@+id/buttonResumeAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resume Audio/Video"/>
+
+    <Button
+        android:id="@+id/buttonStopAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Audio/Video"/>
+
+    <CheckBox
+        android:id="@+id/checkboxLoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loop Playback"/>
+
+    <Button
+        android:id="@+id/buttonReturnToMainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return to Main Menu"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

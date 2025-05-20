@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Gesture Overlay View -->
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gesture_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gestureStrokeType="multiple"
+        android:eventsInterceptionEnabled="true"
+
+        android:elevation="4dp" />
+
+    <!-- TextView for recognized gesture -->
+    <TextView
+        android:id="@+id/textView_recognized_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Распознанный жест"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/gesture_overlay"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- ListView for displaying gestures -->
+    <ListView
+        android:id="@+id/list_gestures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/textView_recognized_gesture"
+        android:layout_marginTop="8dp" />
+
+    <!-- LinearLayout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/list_gestures"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <!-- Help Button -->
+        <Button
+            android:id="@+id/button_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Справка"
+            android:padding="10dp"
+
+            android:textColor="@android:color/white" />
+
+        <!-- Add Gesture Button -->
+        <Button
+            android:id="@+id/button_add_gesture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить жест"
+            android:padding="10dp"
+
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+
+        <!-- Generate Number Button -->
+        <Button
+            android:id="@+id/button_generate_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сгенерировать число"
+            android:padding="10dp"
+
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+
+        <!-- Check Button -->
+        <Button
+            android:id="@+id/button_check_guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Проверить"
+            android:padding="10dp"
+
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
