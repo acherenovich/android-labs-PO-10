@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6200EE</color> <!-- Фиолетовый -->
+    <color name="light_gray">#F5F5F5</color> <!-- Светло-серый -->
+    <color name="dark_gray">#2C2C2C</color> <!-- Тёмно-серый -->
+    <color name="black">#000000</color> <!-- Чёрный -->
+    <color name="white">#FFFFFF</color> <!-- Белый -->
+</resources>
