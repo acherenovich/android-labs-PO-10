@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How to use this application"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do not show this message again"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Understood"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_gravity="center"
+        android:padding="12dp"/>
+
+</LinearLayout>

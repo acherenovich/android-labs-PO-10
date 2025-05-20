@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#94A0BC"
+    tools:context=".VideoActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#94A0BC"
+        android:title="Video Options"
+        android:titleTextColor="@android:color/white" />
+
+    <!-- GridLayout -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="16dp"
+        android:padding="24dp">
+
+        <ImageButton
+            android:id="@+id/cameraBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_camera"
+            android:contentDescription="Camera Button"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background"
+            app:tint="#000000"/>
+
+        <ImageButton
+            android:id="@+id/videoBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_video"
+            android:contentDescription="Video Button"
+            android:layout_margin="8dp"
+            app:tint="#000000"
+            android:background="@drawable/button_background" />
+
+        <ImageButton
+            android:id="@+id/audioBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_audio"
+            android:contentDescription="Audio Button"
+            android:layout_margin="8dp"
+            app:tint="#000000"
+            android:background="@drawable/button_background" />
+
+        <ImageButton
+            android:id="@+id/galleryBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_gallery"
+            android:contentDescription="Gallery Button"
+            android:layout_margin="8dp"
+            app:tint="#000000"
+            android:background="@drawable/button_background" />
+
+    </GridLayout>
+
+</LinearLayout>

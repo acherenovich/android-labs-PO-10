@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ADD8E6"
+    tools:context=".GestureActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shymanouski"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Draw a gesture and enter its name"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gestureStrokeWidth="7"
+        android:gestureColor="#4682B4" />
+
+    <EditText
+        android:id="@+id/gesture_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter gesture name"
+        android:inputType="text"
+        android:layout_marginTop="12dp"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/save_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Gesture"
+        android:textColor="#FFFFFF"
+        android:background="#1E90FF"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+</LinearLayout>
