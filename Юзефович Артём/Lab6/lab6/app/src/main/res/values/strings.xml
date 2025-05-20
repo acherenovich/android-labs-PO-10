@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Угадай Число</string>
+
+    <!-- MainActivity -->
+    <string name="initial_prompt">Введите число жестами</string>
+    <string name="check_number_button">Проверить число</string>
+    <string name="add_gesture_menu_title">Добавить жест</string>
+    <string name="lab_info_menu_title">О лабораторной</string>
+    <string name="gesture_recognized_format">Распознано: %s</string>
+    <string name="gesture_not_recognized">Жест не распознан</string>
+    <string name="error_loading_gestures">Ошибка загрузки библиотеки жестов</string>
+    <string name="gestures_loaded_or_created">Библиотека жестов загружена/создана</string>
+    <string name="input_cleared">Ввод сброшен</string>
+    <string name="correct_guess_format">Правильно! Загаданное число: %d</string>
+    <string name="incorrect_guess_format">Неправильно. Загаданное число: %d</string>
+    <string name="enter_number_prompt">Введите число жестами</string>
+
+    <!-- GestureSaveActivity -->
+    <string name="save_gesture_title">Сохранить жест</string>
+    <string name="gesture_name_hint">Имя жеста (напр. \'1\', \'exit\')</string>
+    <string name="draw_gesture_prompt">Нарисуйте жест в области ниже</string>
+    <string name="gesture_drawn_prompt">Жест нарисован! Введите имя и сохраните.</string>
+    <string name="save_gesture_button">Сохранить жест</string>
+    <string name="enter_gesture_name_error">Введите имя жеста</string>
+    <string name="draw_gesture_first_error">Сначала нарисуйте жест!</string>
+    <string name="gesture_saved_success">Жест \'%s\' сохранён!</string>
+    <string name="gesture_save_error">Ошибка сохранения жеста</string>
+
+</resources>
