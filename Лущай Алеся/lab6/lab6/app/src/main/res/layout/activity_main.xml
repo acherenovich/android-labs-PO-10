@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="top"/>
+
+    <Button
+        android:id="@+id/add_gesture_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить жест"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/number_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите число жестами"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:layout_gravity="center"/>
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gestureStrokeWidth="5.0"
+        android:gestureColor="@android:color/holo_blue_light"
+        android:fadeEnabled="false" />
+
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Проверить число"
+        android:layout_gravity="center"/>
+</LinearLayout>
