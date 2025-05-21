@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id back_button
+id detail_country
+id detail_date
+id detail_description
+id detail_image
+id detail_title
+id details_popup
+id details_text
+id fetch_data_button
+id fragment_container
+id header_text
+id main
+id profile_container
+id profile_description
+id profile_details
+id profile_image
+id profile_title
+id recyclerView
+layout activity_main
+layout activity_profile_detail
+layout fragment_profile_detail
+layout item_profile
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.First_lab
+style Theme.First_lab
+xml backup_rules
+xml data_extraction_rules

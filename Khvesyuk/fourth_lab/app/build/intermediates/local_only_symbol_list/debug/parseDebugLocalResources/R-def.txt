@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable rounded_button
+id btnOk
+id buttonContainer
+id checkBox
+id deleteBtn
+id downloadBtn
+id idEdit
+id openBtn
+id progressBar
+layout activity_main
+layout popup_layout
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.Fourth_lab
+style Theme.Fourth_lab
+xml backup_rules
+xml data_extraction_rules

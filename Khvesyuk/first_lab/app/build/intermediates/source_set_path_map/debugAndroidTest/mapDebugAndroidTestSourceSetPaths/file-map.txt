@@ -1,0 +1,6 @@
+com.example.first_lab.test.app-core-1.5.0-0 C:\Users\timos\.gradle\caches\8.10.2\transforms\65c1a0ec1304eec9d8ee3d5747898093\transformed\core-1.5.0\res
+com.example.first_lab.test.app-annotation-experimental-1.3.0-1 C:\Users\timos\.gradle\caches\8.10.2\transforms\a45a7948d28d3374720343c77f216d6a\transformed\annotation-experimental-1.3.0\res
+com.example.first_lab.test.app-androidTest-2 C:\Users\timos\AndroidStudioProjects\first_lab\app\build\generated\res\resValues\androidTest\debug
+com.example.first_lab.test.app-mergeDebugAndroidTestResources-3 C:\Users\timos\AndroidStudioProjects\first_lab\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.first_lab.test.app-mergeDebugAndroidTestResources-4 C:\Users\timos\AndroidStudioProjects\first_lab\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.first_lab.test.app-debugAndroidTest-5 C:\Users\timos\AndroidStudioProjects\first_lab\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

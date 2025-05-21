@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoActivity"
+    android:padding="24dp"
+    android:orientation="vertical"> <!-- Светло-голубой фон -->
+
+    <!-- Видео плеер в карточке -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:elevation="6dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_bg">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/videoScrolling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Кнопки управления видео -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/videoResumePauseBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="▶ / ⏸"
+            android:background="@drawable/rounded_bg"
+            android:textColor="#ffffff"
+            android:padding="12dp"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/videoStopBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⏹"
+            android:background="@drawable/rounded_bg"
+            android:textColor="#ffffff"
+            android:padding="12dp"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <!-- Ввод ссылки -->
+    <EditText
+        android:id="@+id/videoUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://videos.pexels.com/video-files/4267245/4267245-sd_640_360_30fps.mp4"
+        android:hint="Введите URL видео"
+        android:padding="12dp"
+        android:background="@drawable/rounded_bg"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnVideoUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Загрузить по URL"
+            android:background="@drawable/rounded_bg"
+            android:textColor="#ffffff"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnVideoGallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Выбрать свое"
+            android:background="@drawable/rounded_bg"
+            android:textColor="#ffffff"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+
+    <!-- Настройки -->
+    <CheckBox
+        android:id="@+id/checkboxLoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔄 Повторять видео"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Отступ перед кнопкой "Назад" -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⬅ Назад"
+        android:background="@drawable/rounded_bg"
+        android:textColor="#ffffff"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>

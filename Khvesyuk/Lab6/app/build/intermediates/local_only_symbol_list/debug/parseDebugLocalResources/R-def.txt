@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color ic_launcher_background
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id add_gesture_button
+id clear_button
+id gestureOverlay
+id gesture_name
+id info_text
+id number_display
+id save_gesture
+id title
+id toggle_mode_button
+layout activity_gesture
+layout activity_info
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.Lab6
+style Theme.Lab6
+xml backup_rules
+xml data_extraction_rules
