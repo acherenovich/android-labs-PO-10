@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+
+
+
+    <!-- Кнопка для камеры -->
+    <ImageButton
+        android:id="@+id/btnCamera"
+        android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/button_border"
+    android:contentDescription="Камера"
+    android:padding="16dp"
+        android:layout_marginBottom="16dp"
+    android:src="@android:drawable/ic_menu_camera" />
+
+    <!-- Кнопка для медиа -->
+    <ImageButton
+        android:id="@+id/btnMedia"
+        android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/button_border"
+        android:layout_marginBottom="16dp"
+    android:src="@android:drawable/ic_menu_slideshow"
+    android:contentDescription="Медиа"
+    android:padding="16dp"/>
+
+    <!-- Кнопка для галереи -->
+    <ImageButton
+        android:id="@+id/btnGallery"
+        android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/button_border"
+    android:src="@android:drawable/ic_menu_gallery"
+    android:contentDescription="Галерея"
+    android:padding="16dp"/>
+
+</LinearLayout>

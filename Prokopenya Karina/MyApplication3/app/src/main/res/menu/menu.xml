@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_student"
+        android:title="О студенте" />
+    <item
+        android:id="@+id/menu_lab"
+        android:title="О лабораторной работе" />
+</menu>

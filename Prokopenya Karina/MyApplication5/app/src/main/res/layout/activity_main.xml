@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Отображение текущей заметки -->
+    <TextView
+        android:id="@+id/number_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Новая заметка"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <!-- Область для рисования жестов -->
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlay"
+        android:layout_width="398dp"
+        android:layout_height="251dp"
+        android:layout_marginBottom="16dp"
+        android:eventsInterceptionEnabled="true"
+        android:fadeEnabled="true"
+        android:gestureColor="@android:color/holo_purple"
+        android:uncertainGestureColor="@android:color/black" />
+
+    <!-- Кнопки по центру -->
+    <Button
+        android:id="@+id/add_word_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить слово" />
+
+    <Button
+        android:id="@+id/new_note_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Новая заметка"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/view_notes_button"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Просмотр заметок" />
+
+    <Button
+        android:id="@+id/add_gesture_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить жест"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

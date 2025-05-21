@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewLabInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Лабораторная работа 20. Геолокационные возможности (Работа № 8 из УМК)\n
+Разработка приложения, демонстрирующего геолокационные возможности.
+В работе необходимо выполнить отображение:\n
+Карты с выбранными локациями в течение некоторого периода времени. Рекомендуется выбрать локацию, отображающую точки, в которых пользователь побывал в течение недели.\n
+Маршрута движения\n
+Посещенных мест в течении некоторого времени (не менее 30 фиксций).\n
+Примечание. Информация приложения требует сбора данных в течении продолжительного времени. По указанной причине разработка, тестирование, сбор данных должны быть выполнены пользователем заблаговременно (задолго до защиты лабораторной работы)
+
+\n"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

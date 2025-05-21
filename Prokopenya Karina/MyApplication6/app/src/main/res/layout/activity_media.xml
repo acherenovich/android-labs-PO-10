@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- SurfaceView для отображения видео -->
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"/>
+
+    <!-- Поле для ввода URL или пути к видео -->
+    <EditText
+        android:id="@+id/etMediaPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите URL или путь к файлу"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Чекбокс для зацикливания воспроизведения -->
+    <CheckBox
+        android:id="@+id/chbLoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Зациклить воспроизведение"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+    <!-- Кнопка для старта воспроизведения -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▶"
+        android:onClick="onClickStart"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Кнопка для паузы -->
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⏸"
+        android:onClick="onClick"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"/>
+
+
+        <!-- Кнопка для остановки воспроизведения -->
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⏹"
+        android:onClick="onClick"
+        android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- SeekBar для регулировки громкости -->
+    <SeekBar
+        android:id="@+id/seekBarVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnChooseFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать файл"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</LinearLayout>
