@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lab5</string>
+    <string name="choose_file">Выбрать файл</string>
+    <string name="selected_file">Выбран файл: </string>
+</resources>
