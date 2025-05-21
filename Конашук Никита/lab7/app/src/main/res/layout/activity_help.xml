@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Справка по приложению"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Приложение позволяет выполнять следующие действия:"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Сделать фотографию с камеры\n• Просматривать фотографии в галерее\n• Выбирать и воспроизводить аудио-файлы\n• Выбирать и воспроизводить видео"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сценарий использования:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Запустите приложение.\n2. На главном экране выберите нужный раздел (Камера, Галерея, Аудио, Видео).\n3. Во вкладке Камера можно сделать снимок.\n4. В разделе Медиа выбрать и воспроизвести файл.\n5. В Галерее посмотреть ранее сохранённые изображения."
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подсказки:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Убедитесь, что у приложения есть разрешения на доступ к камере и файлам.\n• Для фото используйте кнопку «Сделать снимок».\n• Все файлы выбираются через встроенный проводник устройства."
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>
