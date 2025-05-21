@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input for gesture name -->
+    <EditText
+        android:id="@+id/editText_gesture_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text" />
+
+    <!-- Gesture Overlay View for drawing the gesture -->
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gesture_overlay_create"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gestureStrokeType="multiple"
+        android:eventsInterceptionEnabled="true" />
+
+    <!-- Done button -->
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_gravity="end"
+        android:padding="10dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
