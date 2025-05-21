@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Кнопка справки в правом верхнем углу -->
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:drawableTop="@drawable/help"
+        android:text="Справка"
+
+
+        android:layout_alignParentEnd="true" />
+
+    <!-- Нижние кнопки внизу по центру -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="32dp"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:text="Камера"
+            android:drawableTop="@drawable/camera"
+            android:drawablePadding="4dp" />
+
+
+        <Button
+            android:id="@+id/btnMedia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:text="Медиа"
+            android:drawableTop="@drawable/media"
+            android:drawablePadding="4dp" />
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:text="Галерея"
+            android:drawableTop="@drawable/gallery"
+            android:drawablePadding="4dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
