@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextServerIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP адрес сервера (например, 127.0.0.1)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextServerPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Порт сервера (например, 12345)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сообщение для отправки"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить сообщение" />
+
+    <TextView
+        android:id="@+id/textViewSocketResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ответ сервера (сокет) будет здесь" />
+
+</LinearLayout>

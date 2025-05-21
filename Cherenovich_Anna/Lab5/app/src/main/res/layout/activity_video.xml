@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F5F5">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/startButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/rewind_button"
+            android:background="@drawable/transparent_button"
+            android:contentDescription="В начало"/>
+
+        <ImageButton
+            android:id="@+id/rewindButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_f"
+            android:background="@drawable/transparent_button"
+            android:contentDescription="Назад на 5 секунд"/>
+
+        <ImageButton
+            android:id="@+id/playPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_button"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Воспроизведение"/>
+
+
+        <ImageButton
+            android:id="@+id/forwardButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_t"
+            android:background="@drawable/transparent_button"
+            android:contentDescription="Вперед на 10 секунд"/>
+
+        <ImageButton
+            android:id="@+id/endButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/forward_button"
+            android:background="@drawable/transparent_button"
+            android:contentDescription="В конец"/>
+    </LinearLayout>
+
+</LinearLayout>

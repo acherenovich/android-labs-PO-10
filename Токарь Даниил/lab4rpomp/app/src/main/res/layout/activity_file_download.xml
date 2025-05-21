@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextFileUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите URL файла для скачивания"
+        android:inputType="textUri" />
+
+    <Button
+        android:id="@+id/buttonDownloadFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Скачать файл" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDownload"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewDownloadStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Статус загрузки" />
+
+</LinearLayout>
