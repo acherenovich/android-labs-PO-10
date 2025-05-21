@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дрыга В.С."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="#0000FF"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/btnMarkPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Отметить точку"
+            android:textColor="@color/white"
+            android:backgroundTint="#800080"
+            android:layout_margin="4dp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnStartTracking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Начать маршрут"
+            android:textColor="@color/white"
+            android:backgroundTint="#800080"
+            android:layout_margin="4dp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnStopTracking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Завершить маршрут"
+            android:textColor="@color/white"
+            android:backgroundTint="#800080"
+            android:layout_margin="4dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+</LinearLayout>
