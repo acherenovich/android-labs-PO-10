@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Видео"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="openVideoPlayer"/>
+
+    <Button
+        android:id="@+id/btnAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Аудио"
+        android:layout_below="@id/btnVideo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="openAudioPlayer"/>
+
+    <Button
+        android:id="@+id/btnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Галерея"
+        android:layout_below="@id/btnAudio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="openImageGallery"/>
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Камера"
+        android:layout_below="@id/btnImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="openCamera"/>
+</RelativeLayout>
