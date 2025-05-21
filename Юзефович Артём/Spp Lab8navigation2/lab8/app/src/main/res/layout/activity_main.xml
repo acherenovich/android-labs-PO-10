@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Карта OSM, занимает весь экран под остальными элементами -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Горизонтальный контейнер для кнопок управления -->
+    <!-- Расположен внизу экрана -->
+    <LinearLayout
+        android:id="@+id/bottomControlsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#80000000"
+        android:gravity="center_vertical">
+
+        <!-- Кнопка "Начать отслеживание" -->
+        <!-- Занимает половину доступной ширины (вес 1) -->
+        <Button
+            android:id="@+id/startTrackingButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Начать"
+            android:textColor="#000000" />
+
+        <!-- Кнопка "Остановить отслеживание" -->
+        <!-- Занимает вторую половину доступной ширины (вес 1) -->
+        <Button
+            android:id="@+id/stopTrackingButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Стоп"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</RelativeLayout>
