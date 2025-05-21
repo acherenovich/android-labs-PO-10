@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="row_count_entries">
+        <item>5 строк</item>
+        <item>10 строк</item>
+        <item>15 строк</item>
+        <item>Все строки</item>
+    </string-array>
+
+    <string-array name="row_count_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>all</item>
+    </string-array>
+
+    <string-array name="field_entries">
+        <item>Столица</item>
+        <item>Население</item>
+        <item>Язык</item>
+        <item>Валюта</item>
+    </string-array>
+
+    <string-array name="field_values">
+        <item>capital</item>
+        <item>population</item>
+        <item>language</item>
+        <item>currency</item>
+    </string-array>
+</resources>
